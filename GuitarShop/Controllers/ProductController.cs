@@ -34,7 +34,7 @@ namespace GuitarShop.Controllers
             else if (id == "Strings")
             {
                 products = context.Products
-                    .Where(p => p.Category.Name == "Guitars" || p.Category.Name == "Bases")
+                    .Where(p => p.Category.Name == "Guitars" || p.Category.Name == "Basses")
                     .OrderBy(p => p.ProductID).ToList();
 
                 ViewBag.SelectedCategoryName = "Strings";
